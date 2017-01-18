@@ -189,7 +189,9 @@ background: white;
 	position: fixed;
 }
 
-
+#getNewQuote{
+	background-color: transparent;
+}
 @media screen and (max-width: 1000px) and (min-width: 0px) {
     .madeby span {
         display: none;
