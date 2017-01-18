@@ -1,0 +1,215 @@
+body {
+	position: relative;
+	background-color: #ecf0f1;
+	min-width:320px;
+	margin: 0;
+	font-family: "Raleway";
+	background-color: #565656
+}
+.wrapper {
+	display: block;
+}
+.btn {
+	outline: none;
+	border : none;
+	cursor: pointer;
+	padding: 50px 15px ;
+	margin: auto;
+	margin-top: 2%;
+	display: block;
+  text-transform: uppercase; 
+  font-weight: bold;
+  position: relative;
+  transition:color 0.25s ease;
+  border:1px solid #000;
+    overflow:hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+  // color: #FFF;
+  	background-color: transparent;
+  	color: #000;
+  	position: relative;
+border-radius: 50%;
+height: auto;
+background: white;
+};
+
+.btn:hover {
+	color: #fff;
+}
+
+#getNewQuote:hover {
+	color : #fff;
+	background-color: #000;
+
+}
+
+// .btn:before {
+//   content: "";
+//   position: absolute;
+//   // background: #8e44ad;
+//   background: #000;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   top: 100%;
+//   z-index: -1;
+//   -webkit-transition: top 0.09s ease-in;
+//   color: #FFF;
+//   outline: none;
+// }
+// .btn:hover:before {
+//   top: 0;
+// }
+
+#object1 {
+	nin-height: 40px;
+	width: 60%;
+	margin: auto;
+	padding: 40px;
+	border: 1px solid #4b245c;
+}
+.btn2 {
+	padding: 20px;
+	margin: auto;
+	cursor: pointer;
+	margin: auto;
+	display: block;
+	background: linear-gradient(to right, red 50%, blue 50%);
+	background-size: 200% 100%;
+	background-position:right bottom;	
+	transition:all 2s ease;
+	border: none;
+}
+.btn2:hover {
+	background-position: left bottom;
+	transition:all 2s ease;
+	color: #FFF;
+}
+.btn:hover span {
+	color: #FFF;
+	transition: 0.4s;
+}
+
+.background {
+
+	min-height: 100vh;
+	nin-width: 50vh;
+	// background: url("img/pine-trees.jpg") center;
+	background: url("img/pine-trees.jpg") center;
+
+	background-repeat: no-repeat;
+	// float: left;
+	        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        	display: block;
+        	position: relative;
+}
+.background:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+}
+
+.btn span {
+	outline: none;
+}
+
+.quoteWrapper {
+	position: relative;
+	text-align: center;
+	color: #FFF;
+	padding-top: 8rem;
+}
+.bottom-line {
+	background-color: #f6f6f6;
+	min-height: 30%;
+	position: fixed;
+	width:100%;
+	bottom: 0;
+}
+
+.twitter-share-button {
+	float: left;
+	border : 1px solid #000;
+	border-radius: 50%;
+	padding: 15px 17px;
+	height: auto;
+	color: #000;
+	left: 0;
+	bottom: 5%;	
+	position: relative;
+	left: 3rem;
+	position: fixed;
+}
+.twitter-share-button:hover {
+	background-color : #000;
+	color: #f6f6f6;
+	transition: .2s;
+}
+
+
+.quote-text {
+	top: 40%;
+	font-size: 2em;
+	z-index: 9;
+}
+
+.author-text {
+	padding-top: 2rem;
+	z-index: 9;
+}
+.quoteWrapper {
+	opacity: .9;
+	width: 60%;
+	margin: auto;
+	position: relative;
+}
+
+.madeby {
+	float: right;
+	padding: 15px 17px;
+	height: auto;
+	color: #000;
+	right: 0;
+	bottom: 4%;	
+	position: relative;
+	right: 3rem;
+	position: fixed;
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 0px) {
+    .madeby span {
+        display: none;
+    }
+    #getNewQuote {
+    		float: right;
+	height: auto;
+	color: #000;
+	right: 0;
+	bottom: 4%;	
+	right: 2rem;
+	position: fixed;
+	font-size: .7rem;
+	padding: 30px 5px;
+    }
+	
+}
+
+@media screen and (max-width: 768px) and (min-width: 0px) {
+    .quote-text {
+    	font-size: 1.2rem;
+    }
+}
