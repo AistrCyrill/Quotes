@@ -9,12 +9,13 @@ var getNewPhoto = function(data){
 }
 var getNewQuote = function(data){
   $(".quote-text").text(data.quoteText);
+  $(".author-text").text(' - ' + data.quoteAuthor);
     var quot = 'https://twitter.com/intent/tweet?text=' + data.quoteText + ' Author ' + data.quoteAuthor + ' ' ;
   if (data.quoteAuthor === ''); { 
     data.quoteAuthor = 'Unknown';
   }
 
-  $(".author-text").text(' - ' + data.quoteAuthor);
+
   $(".twitter-share-button").attr("href", quot);
 
 };
